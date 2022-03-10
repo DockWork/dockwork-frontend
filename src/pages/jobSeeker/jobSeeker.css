@@ -1,0 +1,135 @@
+.my-dashboard-grid-holder {
+  margin-top: 20px;
+}
+.my-dashboard-grid-double {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+.my-dashboard-triple-grid {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-areas:
+    'perso calendar'
+    'experi calendar';
+  grid-template-columns: repeat(2, 1fr);
+}
+#perso {
+  grid-area: perso;
+  width: 100%;
+  height: 100%;
+}
+#experi {
+  grid-area: experi;
+  width: 100%;
+  height: 100%;
+}
+#jscalendar {
+  width: 100%;
+  height: 100%;
+  grid-area: calendar;
+}
+.meeting-calendar {
+  min-height: 100%;
+  background: var(--background);
+  overflow: auto;
+  padding: 10px;
+}
+.calendar-header > .current-month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.monthControlBtn {
+  cursor: pointer;
+}
+.my-dashboard-grid-triple {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.profile-complete {
+  color: var(--blue);
+  font-size: var(--f-32);
+  margin: auto;
+  width: max-content;
+}
+.profile-complete > span {
+  color: var(--orange);
+  font-weight: bold;
+}
+.info-add-another {
+  color: var(--orange);
+  cursor: pointer;
+  width: max-content;
+}
+.dash-perso-res {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skills-card-medals {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.medal-skill {
+  width: 60px;
+}
+.medal-skill.is-disabled {
+  filter: grayscale(1);
+}
+.exp-pdf-uplaod {
+  margin: 20px 0px;
+}
+
+/* MODAL */
+.modal-details {
+  display: flex;
+  align-items: center;
+}
+.modal-details-dtl {
+  display: flex;
+  flex-direction: column;
+}
+.event-m-ttl {
+  font-weight: 600;
+  color: var(--blue);
+  margin-right: 5px;
+}
+.modal-details > .meeting-link {
+  max-width: max-content;
+  cursor: pointer;
+  color: var(--orange);
+  text-decoration: underline;
+}
+.modal-meet-link {
+  padding-left: 20px;
+}
+.modal-meet-link > li::marker {
+  color: var(--orange);
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .my-dashboard-grid-double {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .my-dashboard-triple-grid {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-areas:
+      'perso'
+      'experi'
+      'calendar';
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

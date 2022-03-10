@@ -1,0 +1,11 @@
+.auth-link-holder {
+    margin: 10px 0px !important;
+}
+/* Login */
+.login-card {
+    width: 100%;
+    background: var(--lblue);
+    margin: 30px auto 0px auto;
+    padding: 20px;
+    box-shadow: 0px 6px 16px rgba(0, 71, 143, 0.2);
+}

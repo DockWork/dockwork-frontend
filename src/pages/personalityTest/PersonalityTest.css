@@ -1,0 +1,35 @@
+.personality-test-title {
+  font-size: var(--f-32);
+  font-weight: bold;
+  margin: 30px auto 20px auto;
+  width: max-content;
+}
+.personality-test-section-type {
+  font-size: var(--f-20);
+  font-weight: bold;
+  color: var(--orange);
+  margin: 0px auto 30px auto;
+  width: max-content;
+}
+.question-holder {
+  margin: 10px 0;
+}
+.question-holder > .question > span {
+  color: var(--orange);
+  font-weight: bold;
+}
+.quest-group {
+  display: flex;
+  width: max-content;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.question-holder-sec2 {
+  display: flex;
+  margin: 10px 0;
+}
+.question-holder-sec2 > .question > span {
+  color: var(--orange);
+  font-weight: bold;
+  margin-right: 5px;
+}

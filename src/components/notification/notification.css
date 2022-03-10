@@ -1,0 +1,28 @@
+.notif-body {
+  display: flex;
+}
+.notif-body .part {
+  width: 50%;
+}
+.notif-body .ttl {
+  font-weight: bold;
+  color: var(--orange);
+  font-size: var(--f-20);
+}
+.notif-body .sm-ttl {
+  font-weight: bold;
+  color: var(--blue);
+}
+
+.notif-col.blue > .ant-collapse-header {
+  background-color: #e6f7ff;
+}
+.notif-col.green > .ant-collapse-header {
+  background-color: #f6ffed;
+}
+.notif-col.red > .ant-collapse-header {
+  background-color: #fff2f0;
+}
+.notif-col.yellow > .ant-collapse-header {
+  background-color: #fffbe6;
+}

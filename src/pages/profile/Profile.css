@@ -1,0 +1,25 @@
+.top-profile-info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--blue);
+  margin-bottom: 30px;
+}
+.top-profile-info > .profile-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.top-profile-info > .profile-info > .profile-name {
+  font-size: var(--f-20);
+  color: var(--orange);
+  font-weight: bold;
+}
+.top-profile-info > .profile-info > .profile-email {
+  font-size: var(--f-16);
+}
+.profile-spliter {
+  margin: 0px 8px;
+  font-weight: bold;
+  color: var(--orange);
+}

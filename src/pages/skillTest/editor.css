@@ -1,0 +1,42 @@
+.skill-editor {
+  width: 100% !important;
+  height: 500px !important;
+}
+.skill-test {
+  white-space: pre;
+}
+
+.skill-test .title {
+  font-weight: bold;
+  font-size: var(--f-20);
+  color: var(--orange);
+}
+
+.skill-test .input {
+  font-weight: bold;
+  color: var(--orange);
+  margin-top: 20px;
+}
+.skill-congrats {
+  font-weight: bold;
+  font-size: var(--f-20);
+  margin: auto;
+  width: max-content;
+}
+.skill-pass-info {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: var(--f-48);
+  margin: auto;
+  width: max-content;
+}
+.skill-medal-cong {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.skill-medal-cong > img {
+  width: 200px;
+  margin-bottom: 40px;
+}

@@ -1,0 +1,22 @@
+.main-card {
+  padding: 20px;
+  background: var(--lblue);
+  box-shadow: var(--shadow);
+  width: 100%;
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.main-card-title {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: var(--f-32);
+  justify-self: flex-start;
+}
+.main-card-descrition {
+  color: var(--orange);
+  font-size: var(--f-12);
+  margin-bottom: 20px;
+  justify-self: flex-start;
+}

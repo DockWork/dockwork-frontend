@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700&display=swap');
+
+:root {
+  --blue: #00478f;
+  --orange: #ff5d00;
+  --brown: #2a231f;
+  --lblue: #d8e1e7;
+  --background: #e3e7ea;
+
+  --f-8: 0.5rem; /* 8px */
+  --f-12: 0.75rem; /* 12px */
+  --f-16: 1rem; /* 16px */
+  --f-20: 1.25rem; /* 20px */
+  --f-32: 2rem; /* 32px */
+  --f-48: 3rem; /* 48px */
+  --f-56: 3.5rem; /* 56px */
+
+  --shadow: 0px 6px 12px #00488f2a;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+}
+body {
+  font-family: 'Heebo', sans-serif !important;
+  font-size: var(--f-16) !important;
+  background-color: var(--background) !important;
+  color: var(--blue) !important;
+}
+img {
+  -webkit-user-drag: none;
+  -khtml-user-drag: none;
+  -moz-user-drag: none;
+  -o-user-drag: none;
+  user-select: none;
+}
+.pages-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  justify-content: space-between;
+}
+/* Typography */
+.bold-t {
+  font-weight: bold !important;
+}
+.main-title {
+  font-weight: bold;
+  font-size: var(--f-32);
+  width: max-content;
+}
+.main-title::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: var(--orange);
+}
+.o-title {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: var(--f-20);
+  margin: 10px 0px;
+}
+.b-title {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: var(--f-20);
+  margin: 10px 0px;
+}
+
+/* Header */
+.main-header-row {
+  box-shadow: var(--shadow);
+  margin-bottom: 30px;
+}
+.header-container {
+  padding: 30px 0px;
+}
+.header-avatar-menu {
+  background: var(--lblue);
+  box-shadow: var(--shadow);
+  border-radius: 3px;
+}
+.header-avatar-menu .profile-info-container {
+  border-bottom: 1px solid var(--blue);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.header-avatar-menu .profile-info-container .info-holder {
+  color: var(--orange);
+  margin-left: 5px;
+  font-weight: bold;
+}
+.header-avatar-menu .profile-links {
+  list-style: none;
+  padding: 10px;
+}
+.header-logo > img {
+  cursor: pointer;
+}
+
+/* Footer */
+.main-footer-row {
+  margin-top: 50px;
+  box-shadow: var(--shadow) inset;
+  padding: 30px 0px;
+}
+
+/* Landing page */
+.cool-seeker {
+  width: 80%;
+  margin: auto;
+}
+.cool-seeker > img {
+  width: 100%;
+}
+/* COMMON */
+.singleMeetingCal {
+  cursor: pointer;
+}

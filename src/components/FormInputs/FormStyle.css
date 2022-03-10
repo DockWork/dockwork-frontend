@@ -1,0 +1,49 @@
+.main-select-input {
+  height: 100%;
+}
+.main-select-input > .ant-select-selector {
+  height: 100% !important;
+
+  border-radius: 0px !important;
+}
+.main-select-input > .ant-select-selector > .ant-select-selection-placeholder {
+  display: flex !important;
+  align-items: center !important;
+  height: 100% !important;
+}
+
+.main-select-input > .ant-select-selector:hover,
+.main-select-input > .ant-select-selector:focus,
+.main-select-input > .ant-select-selector:active {
+  height: 100% !important;
+}
+.main-select-input > .ant-select-selector > .ant-select-selection-item {
+  align-items: center;
+}
+
+.main-select-input.ant-select-disabled {
+  cursor: default !important;
+}
+.main-select-input.ant-select-disabled > .ant-select-selector {
+  cursor: default !important;
+}
+.main-select-input.ant-select-disabled > .ant-select-selector:hover {
+  cursor: default !important;
+}
+.main-select-input.ant-select-disabled > .ant-select-selector:hover .ant-select-selection-search-input {
+  cursor: default !important;
+}
+.main-select-input.ant-select > .ant-select-selector > .ant-select-selection-search {
+  display: flex !important;
+  align-items: center;
+}
+
+.main-input > .ant-input-group {
+  height: 100%;
+}
+.main-input > .ant-input-group > .ant-input {
+  height: 100%;
+}
+.main-input > .ant-input {
+  height: 100%;
+}

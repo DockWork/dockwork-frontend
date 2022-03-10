@@ -1,0 +1,148 @@
+.match-card {
+  padding: 20px;
+  background: var(--lblue);
+  box-shadow: var(--shadow);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.match-card > * {
+  margin-right: 20px;
+}
+.match-card > .match-num {
+  color: var(--orange);
+  font-weight: bold;
+  font-size: 50px;
+}
+.my-dashboard-grid-holder {
+  margin-top: 20px;
+}
+.recruiter-dashboard {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas:
+    'search calendar'
+    'history calendar';
+}
+.recruiter-dashboard .search {
+  grid-area: search;
+  width: 100%;
+  height: 100%;
+}
+.recruiter-dashboard .history {
+  width: 100%;
+  grid-area: history;
+  height: 100%;
+}
+.recruiter-dashboard .calendar {
+  width: 100%;
+  height: 100%;
+  grid-area: calendar;
+}
+
+.my-dashboard-grid-triple {
+  display: grid;
+  column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.meeting-calendar {
+  min-height: 100%;
+  background: var(--background);
+  overflow: auto;
+  padding: 10px;
+}
+.calendar-header > .current-month {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.monthControlBtn {
+  cursor: pointer;
+}
+.history-holder {
+  border: 1px solid var(--blue);
+}
+.single-seach-match {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid var(--blue);
+  padding: 10px;
+  justify-content: space-between;
+  font-weight: 600;
+}
+.single-seach-match > .date {
+  color: var(--orange);
+}
+.single-seach-match:last-child {
+  border: none;
+  padding: 10px;
+}
+.perso-test-res {
+  display: flex;
+  flex-direction: column;
+}
+.perso-test-res > span {
+  display: flex;
+  flex-direction: row;
+}
+
+/* MODAL */
+.modal-details {
+  display: flex;
+  align-items: center;
+}
+.modal-details-dtl {
+  display: flex;
+  flex-direction: column;
+}
+.event-m-ttl {
+  font-weight: 600;
+  color: var(--blue);
+  margin-right: 5px;
+}
+.modal-details > .meeting-link {
+  max-width: max-content;
+  cursor: pointer;
+  color: var(--orange);
+  text-decoration: underline;
+}
+.modal-meet-link {
+  padding-left: 20px;
+}
+.modal-meet-link > li::marker {
+  color: var(--orange);
+  font-size: 12px;
+}
+.back-link {
+  cursor: pointer;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  color: var(--orange);
+  text-decoration: underline;
+  font-size: var(--f-16);
+}
+.back-link > span {
+  margin-right: 5px;
+}
+.single-skill {
+  display: flex;
+  align-items: center;
+}
+.single-skill > img {
+  height: 25px;
+}
+
+@media (max-width: 768px) {
+  .recruiter-dashboard {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+}
