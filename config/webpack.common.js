@@ -46,27 +46,12 @@ module.exports = {
         },
       },
       {
-        test: /\.(less|scss|css)$/,
+        test: /\.(scss|css)$/,
         use: [
-          {
-            loader: 'style-loader',
-          },
+          'style-loader',
           {
             loader: 'css-loader',
             options: {sourceMap: true, importLoaders: 1},
-          },
-          {
-            loader: 'less-loader',
-            options: {
-              sourceMap: true,
-              // importLoaders: 1,
-              lessOptions: {
-                modifyVars: {
-                  'primary-color': '#ff0000',
-                },
-                javascriptEnabled: true,
-              },
-            },
           },
           {loader: 'sass-loader', options: {sourceMap: true}},
         ],
