@@ -3,7 +3,7 @@
   height: 500px !important;
 }
 .skill-test {
-  white-space: pre;
+  white-space: pre-wrap;
 }
 
 .skill-test .title {
