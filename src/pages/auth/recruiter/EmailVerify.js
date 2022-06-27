@@ -17,7 +17,7 @@ const EmailVerify = ({verifyEmailLoading, verify}) => {
 
   return (
     <Row justify="center">
-      <Col span={8}>
+      <Col xl={{span: 8}} md={{span: 12}} xs={{span: 22}}>
         <div className="main-title">Verify your email</div>
         <div className="auth-sub-title">Click on the &ldquo;Verify&rdquo; button to verify your email</div>
         <Row justify="center" style={{marginTop: '50px'}}>

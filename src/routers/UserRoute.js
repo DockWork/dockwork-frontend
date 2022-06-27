@@ -8,7 +8,7 @@ const UserRoute = ({component: Component, accessToken, ...rest}) => {
       <Route
         {...rest}
         render={(props) =>
-          accessToken ? (
+          !accessToken ? (
             <Component {...props} />
           ) : (
             <Redirect

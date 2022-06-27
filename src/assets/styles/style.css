@@ -122,3 +122,9 @@ img {
 .singleMeetingCal {
   cursor: pointer;
 }
+
+@media (max-width: 768px) {
+  .header-container {
+    padding: 15px 0px;
+  }
+}

@@ -21,31 +21,6 @@ export const Header = () => {
               <img src={Logo} alt=".DockWork" onClick={() => history.push('/')} />
             </div>
           </Col>
-          {/* <Col span={12}>
-                        <Row align="middle" justify="end" gutter={[5, 0]}>
-                            <Col>
-                                <ButtonControl
-                                    value={'Login'}
-                                    handleClick={() => history.push('/login')}
-                                    height={'40px'}
-                                    width={'150px'}
-                                    type="primary"
-                                    bold={false}
-                                    htmlType="button"
-                                />
-                            </Col>
-                            <Col>
-                                <ButtonControl
-                                    value={'Sign up'}
-                                    handleClick={() => history.push('/register')}
-                                    height={'40px'}
-                                    width={'150px'}
-                                    bold={false}
-                                    htmlType="button"
-                                />
-                            </Col>
-                        </Row>
-                    </Col> */}
         </Row>
       </Col>
     </Row>

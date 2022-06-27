@@ -28,7 +28,7 @@ const Login = ({login, loginLoading}) => {
 
   return (
     <Row justify="center">
-      <Col span={8}>
+      <Col xl={{span: 8}} md={{span: 12}} xs={{span: 22}}>
         <div className="main-title">Login as Job Seeker</div>
         <div className="login-card">
           <Formik initialValues={values} validationSchema={loginSchema} onSubmit={handleLogin}>

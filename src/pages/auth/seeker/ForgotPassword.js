@@ -25,7 +25,7 @@ const ForgotPassword = ({passwordResetRequest, passwordResetLoading}) => {
 
   return (
     <Row justify="center">
-      <Col span={8}>
+      <Col xl={{span: 8}} md={{span: 12}} xs={{span: 22}}>
         <div className="main-title">Forgot Password</div>
         <div className="auth-sub-title">Enter your account email to reset your password</div>
         <div className="login-card">

@@ -48,7 +48,7 @@ const SignupRecruiter = ({register, registerLoading}) => {
 
   return (
     <Row justify="center">
-      <Col span={8}>
+      <Col xl={{span: 8}} md={{span: 12}} xs={{span: 22}}>
         <div className="main-title">Sign up</div>
         <div className="auth-sub-title">For Job Recruiter</div>
         <div className="login-card">

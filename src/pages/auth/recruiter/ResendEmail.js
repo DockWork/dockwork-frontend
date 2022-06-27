@@ -17,7 +17,7 @@ const ResendEmail = ({resendVerifyEmailLoading, resendVerify}) => {
 
   return (
     <Row justify="center">
-      <Col span={8}>
+      <Col xl={{span: 8}} md={{span: 12}} xs={{span: 22}}>
         <div className="main-title">Resend email</div>
         <div className="auth-sub-title">
           Click on the &ldquo;Resend email&rdquo; button to resend a verification email

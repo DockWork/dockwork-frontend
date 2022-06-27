@@ -34,7 +34,7 @@ const ResetPassword = ({passwordSubmitLoading, passwordResetSubmit}) => {
 
   return (
     <Row justify="center">
-      <Col span={8}>
+      <Col xl={{span: 8}} md={{span: 12}} xs={{span: 22}}>
         <div className="main-title">Reset Password</div>
         <div className="auth-sub-title">Enter your new password and confirm it</div>
         <div className="login-card">

@@ -1,5 +1,4 @@
 import {PrivateApiCall, PublicApiCall} from './interceptors'
-// import {CLOUDINARY_API_KEY, CLOUDINARY_CLOUD_NAME} from './constants'
 
 const errorCatch = (error) => {
   console.log('ERROR API', error, error?.response)
